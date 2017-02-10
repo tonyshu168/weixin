@@ -1,0 +1,9 @@
+<view id="outter" bindtap="handleTap1">
+    <view id="middle" catchtap="handleTap2">
+        <view id = "inner" bindtap="handleTap3">
+        </view>
+    </view>
+</view>
+<view>
+    <text data-dataText="1" bindtap="handleTap4">data-set</text>
+</view>

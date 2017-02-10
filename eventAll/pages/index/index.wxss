@@ -1,0 +1,4 @@
+/* pages/index/index.wxss */
+#outter{width: 100%; height: 400px; background: #f00; text-align: center;}
+#middle{display: inline-block; width: 75%; height: 280px; background: #00f; margin-top: 60px;}
+#inner{display: inline-block; width: 50%; height: 200px; background: #0f0; margin-top: 40px;}
