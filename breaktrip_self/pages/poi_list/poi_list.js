@@ -1,4 +1,4 @@
-// pages/explore/explore.js
+// pages/poi_list/poi_list.js
 Page({
   data:{},
   onLoad:function(options){

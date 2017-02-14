@@ -1,4 +1,4 @@
-// pages/explore/explore.js
+// pages/user/user.js
 Page({
   data:{},
   onLoad:function(options){

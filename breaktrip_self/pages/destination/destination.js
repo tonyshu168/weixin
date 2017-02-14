@@ -1,4 +1,4 @@
-// pages/explore/explore.js
+// pages/destination/destination.js
 Page({
   data:{},
   onLoad:function(options){

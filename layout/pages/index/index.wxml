@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="item">
+    <text>item1</text>
+  </view>
+
+  <view class="item">
+    <text>item2</text>
+  </view>
+
+  <view class="item i3">
+    <text>item3</text>
+  </view>
+
+  <view class="item">
+    <text>item4</text>
+  </view>
+  
+  <view class="item">
+    <text>item5</text>
+  </view>
+
+  <view class="item">
+    <text>item6</text>
+  </view>
+
+  <view class="item">
+    <text>item7</text>
+  </view>
+
+  <view class="item">
+    <text>item8</text>
+  </view>
+ 
+
+</view>

@@ -1,0 +1,27 @@
+/**index.wxss**/
+.container{
+  box-sizing: border-box;
+  width: 100%;
+  height: 800rpx;
+  background: purple;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.item{
+  width: 150rpx;
+  height: 100rpx;
+  display: flex;
+  border: 1px solid #fff;
+  background: pink;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+}
+
+.i3{
+  order: -1;
+  flex-shrink: 0;
+}

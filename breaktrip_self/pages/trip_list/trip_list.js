@@ -1,4 +1,4 @@
-// pages/explore/explore.js
+// pages/trip_list/trip_list.js
 Page({
   data:{},
   onLoad:function(options){

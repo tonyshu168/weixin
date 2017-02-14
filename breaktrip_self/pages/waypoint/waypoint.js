@@ -1,4 +1,4 @@
-// pages/explore/explore.js
+// pages/waypoint/waypoint.js
 Page({
   data:{},
   onLoad:function(options){
