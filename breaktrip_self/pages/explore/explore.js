@@ -1,19 +1,34 @@
-// pages/explore/explore.js
+const api = require('../../utils/api.js');
+
+const App = getApp();
 Page({
-  data:{},
-  onLoad:function(options){
-    // 页面初始化 options为页面跳转所带来的参数
+  data: {
+    elements: [],
+    windowWidth: App.systemInfo.windowWidth,
   },
-  onReady:function(){
-    // 页面渲染完成
+  onReady() {
   },
-  onShow:function(){
-    // 页面显示
+  onLoad() {
+    const self = this;
+    wx.showToast({
+      title: '正在加载',
+      icon: 'loading',
+      duration: 10000,
+    });
+    api.getExplorePlaceList({
+      success: (res) => {
+        const dest = res.data;
+        self.setData({
+          elements: dest.elements,
+        });
+        wx.hideToast();
+      },
+    });
   },
-  onHide:function(){
-    // 页面隐藏
+  viewPOI(e) {
+    const data = e.currentTarget.dataset;
+    wx.navigateTo({
+      url: `../destination/destination?type=${data.type}&id=${data.id}&name=${data.name}`,
+    });
   },
-  onUnload:function(){
-    // 页面关闭
-  }
-})
+});
