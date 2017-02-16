@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "orange",
+    "navigationBarTitleText": "外卖订餐",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#eee",
+    "selectedColor": "#111",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list":[{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "imgs/tabBar/home_2.png",
+      "selectedIconPath": "imgs/tabBar/home_1.png"
+    },{
+      "pagePath": "pages/logs/logs",
+      "text": "我的",
+      "iconPath": "imgs/tabBar/mine_2.png",
+      "selectedIconPath": "imgs/tabBar/mine_1.png"
+    }]
+  }
+}
