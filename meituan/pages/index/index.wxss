@@ -1,21 +1,117 @@
 /**index.wxss**/
-.userinfo {
+.section{
+  width: 100%;
+  height: 100%;
+}
+.banner{
+  width: 100%;
+  position: relative;
+}
+.address{
+  width: 350rpx;
+  height: 80rpx;
+  background: rgba(179,179,179, 0.5);
+  border-radius: 45rpx;
+  position: absolute;
+  left: 10rpx;
+  top: 10rpx;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.address span{margin:0 20rpx;}
+.nav_page01{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.nav_page01 view{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  flex-grow: 0;
+}
+.navigator{
+  background: #fff;
+}
+.navigator swiper swiper-item{
+  margin-top: 20rpx;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.icon_location{
+  display: inline-block;
+  width: 60rpx;
+  height: 60rpx;
+  background: url(../../imgs/index/icon_location.png) no-repeat;
+  background-size: 60rpx 60rpx;
 }
 
-.usermotto {
-  margin-top: 200px;
+.icon{
+  display: block;
+  width: 100rpx;
+  height: 100rpx;  
+}
+.icon_cate{
+  background: url(../../imgs/index/icon_1.jpg) no-repeat;
+  background-size: 100rpx 100rpx;
+}
+.icon_time{
+  display: inline-block;
+  width: 30rpx;
+  height: 30rpx;
+  background: url(../../imgs/index/icon_search.png) no-repeat;
+  background-size: 30rpx 30rpx;
+}
+
+/****  详情列表样式 *******/
+.allList{
+  width: 100%;
+  background: #fff;
+  margin-top: 10rpx;
+}
+.tab{
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.categories{
+  width: 100%;
+  height: 80rpx;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.detailItem{
+  width: 100%;
+  margin-top: 5rpx;
+  padding-bottom: 5rpx;
+  border-bottom: 1px solid #eee;
+}
+.detailItem image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.instruction{
+  display: inline-block;
+  margin-left:20rpx;
+  vertical-align: top;
+}
+.instruction p:first-child{
+  font-size: 16px;
+  margin-bottom: 20rpx;
+  display: block;
+}
+.instruction p:last-child{
+  font-size: 14px;
 }

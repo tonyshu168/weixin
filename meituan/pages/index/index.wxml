@@ -1,10 +1,205 @@
-<!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view class="section">
+    <!--顶部的banner-->
+    <view class="banner">
+        <swiper indicator-dots = "true" autoplay = "true" interval = "1500" duration = "1000" circular="true">
+            <swiper-item>
+                <image src="../../imgs/banner_1.jpg" style="width: 100%; height: 400rpx;"></image>
+            </swiper-item>
+            <swiper-item>
+                <image src="../../imgs/banner_2.jpg" style="width: 100%; height: 400rpx;"></image>
+            </swiper-item>
+            <swiper-item>
+                <image src="../../imgs/banner_3.jpg" style="width: 100%; height: 400rpx;"></image>
+            </swiper-item>
+        </swiper>
+        <view class="address">
+            <block>
+                <span class="icon_location"></span>
+                <text>深圳科院</text>
+            </block>
+        </view>
+    </view>
+    <!-- 中间的的购物导航-->
+    <view class="navigator">
+        <swiper indicator-dots = "true" autoplay="false" duration = "1000" >
+            <swiper-item>
+                <view class="nav_page01">
+                    <view>
+                        <span class="icon icon_cate"></span>
+                        <text>美食</text>
+                    </view>
+                    <view>
+                        <span class="icon icon_cate"></span>
+                        <text>美食</text>
+                    </view>
+                    <view>
+                        <span class="icon icon_cate"></span>
+                        <text>美食</text>
+                    </view>
+                    <view>
+                        <span class="icon icon_cate"></span>
+                        <text>美食</text>
+                    </view>
+                </view>
+                <view class="nav_page01" style="margin-top: 20rpx;">
+                    <view>
+                        <span class="icon icon_cate"></span>
+                        <text>美食</text>
+                    </view>
+                    <view>
+                        <span class="icon icon_cate"></span>
+                        <text>美食</text>
+                    </view>
+                    <view>
+                        <span class="icon icon_cate"></span>
+                        <text>美食</text>
+                    </view>
+                    <view>
+                        <span class="icon icon_cate"></span>
+                        <text>美食</text>
+                    </view>
+                </view>
+            </swiper-item>
+
+            <swiper-item>
+                <view class="nav_page01">
+                    <view>
+                        <span class="icon icon_cate"></span>
+                        <text>美食</text>
+                    </view>
+                    <view>
+                        <span class="icon icon_cate"></span>
+                        <text>美食</text>
+                    </view>
+                    <view>
+                        <span class="icon icon_cate"></span>
+                        <text>美食</text>
+                    </view>
+                    <view>
+                        <span class="icon icon_cate"></span>
+                        <text>美食</text>
+                    </view>
+                </view>
+                <view class="nav_page01" style="margin-top: 20rpx;">
+                    <view>
+                        <span class="icon icon_cate"></span>
+                        <text>美食</text>
+                    </view>
+                    <view>
+                        <span class="icon icon_cate"></span>
+                        <text>美食</text>
+                    </view>
+                    <view>
+                        <span class="icon icon_cate"></span>
+                        <text>美食</text>
+                    </view>
+                    <view>
+                        <span class="icon icon_cate"></span>
+                        <text>美食</text>
+                    </view>
+                </view>
+            </swiper-item>
+        </swiper>
+    </view>
+
+    <!-- 详情列表 -->
+    <scroll-view scroll-y="true" bindscrolltolower="loadMore" >
+    <view class="allList">
+        <view class="tab">
+            <text>----- 附近商家 -----</text>
+        </view>
+        <view class="categories">
+            <view bindtap="clickOrder">综合排序</view>
+            <view bindtap="clickSell">销量最高</view>
+            <view bindtap="clickDistance">距离最近</view>
+        </view>
+        <view class="detailList">
+            <view class="detailItem">
+                <image src="../../imgs/menu01.jpg"/>
+                <view class="instruction">
+                    <p>烤鹅王(体育西店)</p>
+                    <p>起送价: <span>20</span> 配送费: <span> ￥</span> <span class="icon_time"></span>49</p>
+                </view>
+            </view>
+            <view class="detailItem">
+                <image src="../../imgs/menu01.jpg"/>
+                <view class="instruction">
+                    <p>烤鹅王(体育西店)</p>
+                    <p>起送价: <span>20</span> 配送费: <span> ￥</span> <span class="icon_time"></span>49</p>
+                </view>
+            </view>
+            <view class="detailItem">
+                <image src="../../imgs/menu01.jpg"/>
+                <view class="instruction">
+                    <p>烤鹅王(体育西店)</p>
+                    <p>起送价: <span>20</span> 配送费: <span> ￥</span> <span class="icon_time"></span>49</p>
+                </view>
+            </view>
+            <view class="detailItem">
+                <image src="../../imgs/menu01.jpg"/>
+                <view class="instruction">
+                    <p>烤鹅王(体育西店)</p>
+                    <p>起送价: <span>20</span> 配送费: <span> ￥</span> <span class="icon_time"></span>49</p>
+                </view>
+            </view>
+            <view class="detailItem">
+                <image src="../../imgs/menu01.jpg"/>
+                <view class="instruction">
+                    <p>烤鹅王(体育西店)</p>
+                    <p>起送价: <span>20</span> 配送费: <span> ￥</span> <span class="icon_time"></span>49</p>
+                </view>
+            </view>
+            <view class="detailItem">
+                <image src="../../imgs/menu01.jpg"/>
+                <view class="instruction">
+                    <p>烤鹅王(体育西店)</p>
+                    <p>起送价: <span>20</span> 配送费: <span> ￥</span> <span class="icon_time"></span>49</p>
+                </view>
+            </view>
+            <view class="detailItem">
+                <image src="../../imgs/menu01.jpg"/>
+                <view class="instruction">
+                    <p>烤鹅王(体育西店)</p>
+                    <p>起送价: <span>20</span> 配送费: <span> ￥</span> <span class="icon_time"></span>49</p>
+                </view>
+            </view>
+            <view class="detailItem">
+                <image src="../../imgs/menu01.jpg"/>
+                <view class="instruction">
+                    <p>烤鹅王(体育西店)</p>
+                    <p>起送价: <span>20</span> 配送费: <span> ￥</span> <span class="icon_time"></span>49</p>
+                </view>
+            </view>
+            <view class="detailItem">
+                <image src="../../imgs/menu01.jpg"/>
+                <view class="instruction">
+                    <p>烤鹅王(体育西店)</p>
+                    <p>起送价: <span>20</span> 配送费: <span> ￥</span> <span class="icon_time"></span>49</p>
+                </view>
+            </view>
+            <view class="detailItem">
+                <image src="../../imgs/menu01.jpg"/>
+                <view class="instruction">
+                    <p>烤鹅王(体育西店)</p>
+                    <p>起送价: <span>20</span> 配送费: <span> ￥</span> <span class="icon_time"></span>49</p>
+                </view>
+            </view>
+            <view class="detailItem">
+                <image src="../../imgs/menu01.jpg"/>
+                <view class="instruction">
+                    <p>烤鹅王(体育西店)</p>
+                    <p>起送价: <span>20</span> 配送费: <span> ￥</span> <span class="icon_time"></span>49</p>
+                </view>
+            </view>
+            <view class="detailItem">
+                <image src="../../imgs/menu01.jpg"/>
+                <view class="instruction">
+                    <p>烤鹅王(体育西店)</p>
+                    <p>起送价: <span>20</span> 配送费: <span> ￥</span> <span class="icon_time"></span>49</p>
+                </view>
+            </view>
+            
+        </view>
+    </view>
+    </scroll-view>
 </view>
