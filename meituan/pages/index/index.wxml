@@ -21,7 +21,7 @@
     </view>
     <!-- 中间的的购物导航-->
     <view class="navigator">
-        <swiper indicator-dots = "true" autoplay="false" duration = "1000" >
+        <swiper indicator-dots = "true" autoplay="false">
             <swiper-item>
                 <view class="nav_page01">
                     <view>
@@ -198,7 +198,7 @@
                     <p>起送价: <span>20</span> 配送费: <span> ￥</span> <span class="icon_time"></span>49</p>
                 </view>
             </view>
-            
+
         </view>
     </view>
     </scroll-view>
