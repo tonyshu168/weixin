@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view>
+    <button type="primary" bindtap="getPosition">获取当前位置</button>
+  </view>
+  <view>
+    <text class="block" wx:if="{{show}}">当前位置</text>
+    <block>
+      <text wx:if="{{latitude}}" class="block">latitude:{{latitude}}</text>
+      <text wx:if="{{longitude}}" class="block">longitude:{{longitude}}</text>
+      <text wx:if="{{speed}}" class="block">speed:{{speed}}</text>
+      <text wx:if="{{accuracy}}" class="block">accuracy:{{accuracy}}</text>
+    </block>
+  </view>
+</view>
