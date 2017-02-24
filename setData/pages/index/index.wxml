@@ -1,0 +1,4 @@
+<!--pages/index/index.wxml-->
+<view class="page">
+    <button type="primary" bindtap="click">button</button>
+</view>
