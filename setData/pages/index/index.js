@@ -1,6 +1,8 @@
 // pages/index/index.js
 Page({
-  data:{},
+  data:{
+    str: "strng"
+  },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
   },
@@ -15,5 +17,10 @@ Page({
   },
   onUnload:function(){
     // 页面关闭
+  },
+
+  click: function(){
+    this.setData({str: "stringSub"})
+    console.log(this.data.str)
   }
 })
