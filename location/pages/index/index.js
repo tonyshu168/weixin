@@ -38,7 +38,7 @@ Page({
           latitude: data.latitude,
           longitude: data.longitude
         }
-
+        /*
         wx.chooseLocation({
           latitude: location.loatitude,
           longitude: location.longitude,
@@ -46,20 +46,14 @@ Page({
             console.log(res)
           }
         })
-      }
-      /*
-      success: function(data){
-        let point = {
-          latitude: data.latitude,
-          longitude: data.longitude
-        }
+        */
         wx.openLocation({
-          latitude: point.latitude,
-          longitude: point.longitude,
-          scale: 5
+          latitude: location.latitude,
+          longitude: location.longitude,
+          scale: 28
         })
       }
-      */
+     
     })
   }
 })
