@@ -3,6 +3,6 @@
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">Hi,{{userInfo.nickName}}</text>
     <text>项目地址</text>
-    <text>https://github.com/zhonglimh/wechat-weapp-movie</text>
+    <text>https://github.com/tonyshu168/weixin</text>
   </view>
 </view>
