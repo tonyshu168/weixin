@@ -1,19 +1,43 @@
-// pages/message/message.js
+//index.js
+//获取应用实例
+var app = getApp()
 Page({
-  data:{},
-  onLoad:function(options){
-    // 页面初始化 options为页面跳转所带来的参数
+  data:{
+       modalHidden: true,
+    },
+  mytouchstart: function(e){ 
+    console.log(e.timeStamp + '- touch start')
   },
-  onReady:function(){
-    // 页面渲染完成
+  //长按事件
+  mylongtap: function(e){ 
+    console.log(e.timeStamp + '- long tap')
   },
-  onShow:function(){
-    // 页面显示
+  mytouchend: function(e){ 
+    console.log(e.timeStamp + '- touch end')
   },
-  onHide:function(){
-    // 页面隐藏
+  mytap: function(e){ 
+    console.log(e.timeStamp + '- tap')
+    
   },
-  onUnload:function(){
-    // 页面关闭
+   modalTap: function(e) {
+    this.setData({
+      modalHidden: false
+    })
+  },
+  modalChange: function(e) {
+    this.setData({
+      modalHidden: true
+    })
+  },
+  onLoad: function () {
+    console.log('onLoad')
+    var that = this
+    //调用应用实例的方法获取全局数据
+    app.getUserInfo(function(userInfo){
+      //更新数据
+      that.setData({
+        userInfo:userInfo
+      })
+    })
   }
 })
