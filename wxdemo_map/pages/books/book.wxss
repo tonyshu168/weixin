@@ -1,0 +1,42 @@
+/* pages/books/book.wxss */
+.part {
+    margin-top:10px;
+}
+text {
+  color:#2196f3;
+  font-size:18px;
+}
+.list {
+    white-space: nowrap;
+    margin-bottom:30px;
+}
+
+.list-item {
+    display: inline-block;
+} 
+.list-item  image{
+    width: 100px; 
+    height: 142px; 
+    padding:5px;
+        
+}
+.list-item  .title{
+    font-size: 14px;
+    text-align: center;
+    color: #aaa;
+        
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
+}
+.slide-image {
+    width:100%;
+}
+swiper {
+display:block;
+height:300px;
+margin-bottom:20px;
+
+}

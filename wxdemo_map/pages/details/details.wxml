@@ -1,0 +1,28 @@
+<!--pages/details/details.wxml-->
+
+<view class="details">
+    <text class="title">{{data.title}}</text>
+
+    <view class="">
+        <image class="img" mode="aspectFit" src="{{data.images.medium}}"></image>
+        <text class="desc">{{data.summary}}</text>        
+    </view>
+
+    <view class="tags-list">
+        <text class="tag" wx:for="{{data.tags}}" wx:key="{{item}}" bindtap="like" data-id="{{item.count}}" style="{{list[item.count].like?'color:pink':''}}">
+            {{item.name}}
+        </text>        
+    </view>
+
+    <view class="flex-box pay">        
+        <view  class="flex-box">
+            <text>{{data.publisher}}</text>
+            <text>价格：<text class="red">{{data.price}}</text></text>            
+        </view>
+        <button bindtap="toPay" class="to-pay" type="primary">在线阅读</button>
+    </view>
+
+    
+    
+</view>
+

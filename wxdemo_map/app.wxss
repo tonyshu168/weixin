@@ -1,0 +1,15 @@
+/**app.wxss**/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+  box-sizing: border-box;
+} 
+
+input {
+  background-color: #f2f2f2;
+  color:#ffc0cb;
+}

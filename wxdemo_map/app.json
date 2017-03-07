@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/service/service",
+    "pages/index/index",    
+    "pages/home/home",
+    "pages/books/book",
+    "pages/logs/logs",
+    "pages/details/details",    
+    "pages/service/record",
+    "pages/service/chart"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#8bc34a",
+    "navigationBarTitleText": "Demo",
+    "navigationBarTextStyle":"#fff",
+    "enablePullDownRefresh":"true"
+  },
+  "debug": true,
+  "tabBar": {
+    "position":"top",
+    "borderStyle":"white",
+    "backgroundColor":"#ffc0cb",
+    "selectedColor":"#2196f3",
+    "color":"white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/books/book",
+      "text": "图书"
+    }, {
+      "pagePath": "pages/service/service",
+      "text": "服务"
+    }, {
+      "pagePath": "pages/home/home",
+      "text": "我"
+    }]
+  }
+}

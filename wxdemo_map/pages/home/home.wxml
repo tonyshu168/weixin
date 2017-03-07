@@ -1,0 +1,38 @@
+<!--pages/home/home.wxml-->
+<view class="home" >
+    <loading hidden="{{hidden}}"></loading>
+    <text class="">我的信息</text>
+    <form bindsubmit="formSubmit">
+        <view class="section section_img">
+            <image bindtap="bindImg"  mode="aspectFill" src="{{img}}"></image>
+        </view>
+        <view class="section section_name flex-box ">
+            <label class="section__title" for="nickName">昵称</label>
+            <input id="nickName" type="text" name="nickName" value="Name" placeholder="Name Please"/>
+        </view>
+        <view class="section section_gender flex-box " >
+            <label class="section__title" for="gender">性别</label>
+            <radio-group id="gender" name="gender">
+                <radio value="1" color="#ffc0cb" checked>男</radio>
+                <radio value="2" color="#ffc0cb">女</radio>
+            </radio-group>
+        </view>
+        <view class="section section_position flex-box" >
+            <label class="section__title" for="positionswitch">位置</label>
+            <switch name="positionswitch" bindchange="positionSwitchChange" checked="{{position}}" color="#ffc0cb"/>
+            <text  class="position" style="{{!position?'display:none;':''}}" bindtap="positionChange">{{positionData}}</text>
+        </view>
+        <view class="section section_gap  flex-box " >
+            <label class="section__title">邮件订阅</label>
+            <switch name="mailswitch" bindchange="mailSwitchChange" checked color="#ffc0cb"/>
+        </view>
+        <view class="section section_gap" style="{{!mail?'display:none;':''}}">
+            <label class="section__title" >订阅频率:每周最多{{mailNum}}封订阅推荐</label>
+            <slider bindchange="sliderChange" name="slider" show-value max="20" min="1" selected-color="#ffc0cb"></slider>
+        </view>
+         <view class="btn-area">
+            <button loading="{{loading}}" formType="submit">{{submitText}}</button>
+        </view>        
+    </form>
+</view>
+
